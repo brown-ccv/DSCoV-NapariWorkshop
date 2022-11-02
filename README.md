@@ -28,9 +28,20 @@ This repo hosts code and slides used for the DSCoV workshop on the napari image 
 ## Run the demo on your own computer
 
 * Clone this repo [https://github.com/brown-ccv/DSCoV-NapariWorkshop](https://github.com/brown-ccv/DSCoV-NapariWorkshop)
-* Create a virtual environment using `venv`: `python -m venv .venv` (you can also use Conda for this step as well)
+* Set up a virtual environment with either of the two methods below. Because `napari` requires `pyQT`, which might cause some issues with `pip install`, especailly on M1 Macs. We recommend using `conda` to set up the environment.
+
+### Set up a conda environment (Recommended)
+
+
+
+### Set up a virtual environment using `venv`
+
+* Create a virtual environment using `venv`: `python -m venv .venv`
 * Activate the environment `source .venv/bin/Scripts/activate`
 * Install all dependencies `pip install -r requirements.txt`
+
+
+
 * Launch Jupyter notebook/lab, `jupyter notebook` or `jupyter lab`
 * Open `demo.ipynb`, and execute each cell
 
