@@ -13,7 +13,7 @@ This repo hosts code and slides used for the DSCoV workshop on the napari image 
 
 * Go to [Open OnDemand](https://ood.ccv.brown.edu) 
 * Click on "Desktop"
-* Choose a non-GPU instance (e.g. 4 Cores, 15GB)
+* Choose a GPU instance, none GPU instances would work but `napari` runs faster on GPUs
 * Click "Launch"
 * When the instance is ready, launch the remote desktop in your browser
 
@@ -22,7 +22,8 @@ This repo hosts code and slides used for the DSCoV workshop on the napari image 
 * Start a terminal in the desktop environment
 * Clone this repo [https://github.com/brown-ccv/DSCoV-NapariWorkshop](https://github.com/brown-ccv/DSCoV-NapariWorkshop)
 * In the cloned repo, type `bash load_env.sh`
-* Launch Jupyter notebook/lab, `jupyter notebook` or `jupyter lab`
+* Activate the conda environment `conda activate /gpfs/runtime/opt/DSCoV_env`
+* Launch Jupyter notebook, `jupyter notebook` (Lab might not work)
 * Open `demo.ipynb`, and execute each cell
 
 ## Run the demo on your own computer
@@ -30,17 +31,24 @@ This repo hosts code and slides used for the DSCoV workshop on the napari image 
 * Clone this repo [https://github.com/brown-ccv/DSCoV-NapariWorkshop](https://github.com/brown-ccv/DSCoV-NapariWorkshop)
 * Set up a virtual environment with either of the two methods below. Because `napari` requires `pyQT`, which might cause some issues with `pip install`, especailly on M1 Macs. We recommend using `conda` to set up the environment.
 
-### Set up a conda environment (Recommended)
+#### (Option 1) Set up a conda environment (Recommended)
 
+* Create a conda environment using `conda create -f environment.yml`
+* Activate the enviornment using `conda activate napari_env`
 
-
-### Set up a virtual environment using `venv`
+#### (Option 2) Set up a virtual environment using `venv`
 
 * Create a virtual environment using `venv`: `python -m venv .venv`
+
+If you are on MacOS/Linux:
 * Activate the environment `source .venv/bin/Scripts/activate`
+If you are on Windows:
+* Activate the environment using CMD `.venv\Scripts\activate.bat`
+* Or, activate the environment using PowerShell `<venv>\Scripts\activate.ps1`
+
 * Install all dependencies `pip install -r requirements.txt`
 
-
+## After activating your virtual environment
 
 * Launch Jupyter notebook/lab, `jupyter notebook` or `jupyter lab`
 * Open `demo.ipynb`, and execute each cell
