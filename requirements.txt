@@ -1,4 +1,0 @@
-numpy
-napari[all]
-jupyterlab
-scikit-image
