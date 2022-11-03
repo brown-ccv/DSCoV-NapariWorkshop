@@ -42,15 +42,10 @@ This repo hosts code and slides used for the DSCoV workshop on the napari image 
 
 If you are on MacOS/Linux:
 * Activate the environment `source .venv/bin/Scripts/activate`
-<<<<<<< HEAD
 
-If you are on Windows, activate the environment using CMD `.venv\Scripts\activate.bat`
-* Or, activate the environment using PowerShell `.venv\Scripts\activate.ps1`
-=======
 If you are on Windows:
 * Activate the environment using CMD `.venv\Scripts\activate.bat`
 * Or, activate the environment using PowerShell `<venv>\Scripts\activate.ps1`
->>>>>>> parent of 822bcfb (remove unused files)
 
 * Install all dependencies `pip install -r requirements.txt`
 
