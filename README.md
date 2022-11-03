@@ -44,7 +44,7 @@ If you are on MacOS/Linux:
 * Activate the environment `source .venv/bin/Scripts/activate`
 
 If you are on Windows, activate the environment using CMD `.venv\Scripts\activate.bat`
-* Or, activate the environment using PowerShell `<venv>\Scripts\activate.ps1`
+* Or, activate the environment using PowerShell `.venv\Scripts\activate.ps1`
 
 * Install all dependencies `pip install -r requirements.txt`
 
