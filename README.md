@@ -22,6 +22,8 @@ This repo hosts code and slides used for the DSCoV workshop on the napari image 
 * Start a terminal in the desktop environment
 * Clone this repo [https://github.com/brown-ccv/DSCoV-NapariWorkshop](https://github.com/brown-ccv/DSCoV-NapariWorkshop)
 * In the cloned repo, type `bash load_env.sh`
+* You may need to load the conda module with: `module load anaconda/2022.05`;     
+  After loading the module, `conda init bash`
 * Activate the conda environment `conda activate /gpfs/runtime/opt/DSCoV_env`
 * Launch Jupyter notebook, `jupyter notebook` (Lab might not work)
 * Open `demo.ipynb`, and execute each cell
